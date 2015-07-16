@@ -1,0 +1,754 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BlogTiles | A Bootstrap Template</title>
+
+	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,greek-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link href="css/blog-style.css" rel="stylesheet">
+	<link href="resources/jstiles/css/tl-style.css" rel="stylesheet" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    
+	<div id="header">
+	
+		<nav id="main-nav" class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<span class="logo-nav">BlogTiles</span>
+				<div id="menu-anchor-holder" class="collapsed pull-right">
+					<span id="main-menu-small" class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+					<ul class="nav-ul">
+						<li><a id="home" class="nav-menu-a" href="index.html">Home</a></li>
+						<li><a id="about" class="nav-menu-a" href="#">About</a></li>
+						<li><a id="archive" class="nav-menu-a" href="archive.html">Archive</a></li>
+						<li><a id="contact" class="nav-menu-a" href="#">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="contact-section" class="container-fluid">
+				<div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+					<h1 id="contact-header" class="text-center">Contact us..</h1>					
+					<div class="col-xs-12 col-md-8 col-lg-6 col-md-offset-2 col-lg-offset-3">
+						<label for="contact-input-email" class="bt-contact-label">email</label>
+						<input id="contact-input-email" class="bt-contact-input" type="text" />
+						<label for="contact-input-comment" class="bt-contact-label">comment</label>
+						<textarea id="contact-input-comment" class="bt-contact-input" rows="3"></textarea>
+					</div>
+					<div class="col-xs-12 col-md-8 col-lg-6 col-md-offset-2 col-lg-offset-3">
+						<span class="bt-contact-btn text-center">Send</span>
+						<span id="close-contact" class="bt-contact-btn text-center">Close</span>
+					</div>
+				</div>				
+			</div>
+		</nav>
+		
+		<div id="main-img-holder" class="col-xs-12">
+		
+			<div class="main-logo logo-div"><span>Blog tiles</span></div>
+			<div class="under-logo logo-div"><span>Your place to write!</span></div>
+			
+			<div id="about-section" class="col-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+				<span id="close-about" class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+				<div class="container-fluid">
+					<div class="col-xs-12 text-center">
+						<img id="user-img" src="img/user_2.jpg" />
+					</div>
+					<h2 id="bt-about-name" class="text-center">John Smith</h2>
+					<div class="col-xs-12 col-md-8 col-md-offset-2">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel arcu augue. Nam suscipit, orci vel auctor interdum, magna erat bibendum urna, vel ornare diam ante a sapien. Maecenas eu nulla mi. Nunc dignissim dui quis augue consectetur tristique. Morbi egestas hendrerit imperdiet. Sed ullamcorper molestie quam sed facilisis. Vestibulum sed hendrerit neque.</p>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+	</div>
+	
+	<div id="content" class="col-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+	
+		<div class="goTopBtn">
+			<span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+		</div>
+				
+		<!-- Put here your latest post (visible on load) -->
+		<div class="row marginTop-md">
+			<div id="content-body" class="col-xs-12">	
+			
+				<div class="tl-page" data-tl-template="tempBlog">
+				
+					<div class="bt-main-post" data-bt-bg="img/post_images/space_1.jpg">					
+						<!-- Tile content -->
+						<a href="post.html">
+							<div class="bt-post-cover"></div>
+							<div class="bt-post-details">
+								<div class="col-xs-12">
+									<h2 class="bt-post-title">How to become an austronaut in 5 min!</h2>
+								</div>
+								<div class="col-xs-12">
+									<h3 class="bt-post-subtitle">An easy step by step tutorial for absolute beginners</h3>
+								</div>
+								<div class="col-xs-12">
+									<span class="bt-post-posted">
+										<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+										<span>Posted by Admin on July 13 2015</span>
+									</span>		
+								</div>
+							</div>	
+						</a>
+					</div>
+					
+					<div data-bt-bg="img/post_images/batman.jpg">					
+						<!-- Tile content -->
+						<a href="post.html">
+							<div class="bt-post-cover"></div>
+							<div class="bt-post-details">
+								<div class="col-xs-12">
+									<h2 class="bt-post-title">I was always a big fan of Superman</h2>
+								</div>
+								<div class="col-xs-12">
+									<h3 class="bt-post-subtitle">Batman finally admits he always admired Superman..</h3>
+								</div>
+								<div class="col-xs-12">
+									<span class="bt-post-posted">
+										<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+										<span>Posted by Admin on July 13 2015</span>
+									</span>		
+								</div>
+							</div>
+						</a>
+					</div>
+					
+					<div class="bt-small-post" data-bt-bg="img/post_images/Khaleesi.jpeg">
+						<!-- Tile content -->
+						<a href="post.html">
+							<div class="bt-post-cover"></div>
+							<div class="bt-post-details">
+								<div class="col-xs-12">
+									<h2 class="bt-post-title">My dragons are adopted!</h2>
+								</div>
+								<div class="col-xs-12">
+									<h3 class="bt-post-subtitle">Khaleesi reveals that she is not the real mother of her dragons!</h3>
+								</div>
+								<div class="col-xs-12">
+									<span class="bt-post-posted">
+										<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+										<span>Posted by Admin on June 17 2015</span>
+									</span>		
+								</div>
+							</div>
+						</a>
+					</div>
+					
+					<div class="bt-small-post" data-bt-bg="img/post_images/elvis.jpg">
+						<!-- Tile content -->
+						<a href="post.html">
+							<div class="bt-post-cover"></div>
+							<div class="bt-post-details">
+								<div class="col-xs-12">
+									<h2 class="bt-post-title">Elvis is not alive!</h2>
+								</div>
+								<div class="col-xs-12">
+									<h3 class="bt-post-subtitle">According to very reliable information, Elvis is not alive!</h3>
+								</div>
+								<div class="col-xs-12">
+									<span class="bt-post-posted">
+										<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+										<span>Posted by Admin on June 10 2015</span>
+									</span>		
+								</div>
+							</div>
+						</a>
+					</div>
+					
+					<div data-bt-bg="img/post_images/kabamaru1.jpg">
+						<!-- Tile content -->
+						<a href="post.html">
+							<div class="bt-post-cover"></div>
+							<div class="bt-post-details">
+								<div class="col-xs-12">
+									<h2 class="bt-post-title">Kabamaru on a diet!</h2>
+								</div>
+								<div class="col-xs-12">
+									<h3 class="bt-post-subtitle">Difficult times for Kabamaru Iga-no who has to be on a diet</h3>
+								</div>
+								<div class="col-xs-12">
+									<span class="bt-post-posted">
+										<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+										<span>Posted by Admin on June 10 2015</span>
+									</span>		
+								</div>
+							</div>
+						</a>
+					</div>
+					
+					<div data-bt-bg="img/post_images/hayate12.jpg">
+						<!-- Tile content -->
+						<a href="post.html">
+							<div class="bt-post-cover"></div>
+							<div class="bt-post-details">
+								<div class="col-xs-12">
+									<h2 class="bt-post-title">I will support my brother</h2>
+								</div>
+								<div class="col-xs-12">
+									<h3 class="bt-post-subtitle">Kabamaru's lost brother Hayate declares he will stand by his brother..</h3>
+								</div>
+								<div class="col-xs-12">
+									<span class="bt-post-posted">
+										<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+										<span>Posted by Admin on June 10 2015</span>
+									</span>		
+								</div>
+							</div>
+						</a>
+					</div>
+					
+					<div class="bt-main-post" data-bt-bg="img/post_images/chuck_norris.jpg">
+						<!-- Tile content -->
+						<a href="post.html">
+							<div class="bt-post-cover"></div>
+							<div class="bt-post-details">
+								<div class="col-xs-12">
+									<h2 class="bt-post-title">I have been bullied at school!</h2>
+								</div>
+								<div class="col-xs-12">
+									<h3 class="bt-post-subtitle">In a heartbreaking confession, Chuck Norris admitted he had been bullied at school..</h3>
+								</div>
+								<div class="col-xs-12">
+									<span class="bt-post-posted">
+										<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+										<span>Posted by Admin on May 26 2015</span>
+									</span>		
+								</div>
+							</div>
+						</a>
+					</div>
+					
+					<div data-bt-bg="img/post_images/vespa.jpg">
+						<!-- Tile content -->
+						<a href="post.html">
+							<div class="bt-post-cover"></div>
+							<div class="bt-post-details">
+								<div class="col-xs-12">
+									<h2 class="bt-post-title">New Vespa MotoGP edition!</h2>
+								</div>
+								<div class="col-xs-12">
+									<h3 class="bt-post-subtitle">Exclusive photos of Vespa's new MotoGP racing prototype!</h3>
+								</div>
+								<div class="col-xs-12">
+									<span class="bt-post-posted">
+										<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+										<span>Posted by Admin on May 15 2015</span>
+									</span>		
+								</div>
+							</div>
+						</a>
+					</div>
+					
+					<div data-bt-bg="img/post_images/football.jpg">
+						<!-- Tile content -->
+						<a href="post.html">
+							<div class="bt-post-cover"></div>
+							<div class="bt-post-details">
+								<div class="col-xs-12">
+									<h2 class="bt-post-title">Real Madrit's new goalkeeper</h2>
+								</div>
+								<div class="col-xs-12">
+									<h3 class="bt-post-subtitle">Photo taken from Real yesterday training shows Iker Casillas replacer..</h3>
+								</div>
+								<div class="col-xs-12">
+									<span class="bt-post-posted">
+										<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+										<span>Posted by Admin on May 12 2015</span>
+									</span>		
+								</div>
+							</div>
+						</a>
+					</div>
+					
+				 </div>
+				
+			</div>
+		</div>
+		
+		<!-- Second section of posts (load on scroll) -->
+		<div class="row">
+			<div class="col-xs-12 view-more-section hidden">	
+			
+				<div class="tl-page" data-tl-template="tempBlogMore">
+				
+					<div class="bt-small-post" data-bt-bg="img/post_images/Terminator.jpg">
+						<!-- Tile content -->
+						<a href="post.html">
+							<div class="bt-post-cover"></div>
+							<div class="bt-post-details">
+								<div class="col-xs-12">
+									<h2 class="bt-post-title">I'll be back!</h2>
+								</div>
+								<div class="col-xs-12">
+									<h3 class="bt-post-subtitle">Arnold insists, he'll be back..</h3>
+								</div>
+								<div class="col-xs-12">
+									<span class="bt-post-posted">
+										<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+										<span>Posted by Admin on April 2 2015</span>
+									</span>		
+								</div>
+							</div>
+						</a>
+					</div>
+					
+					<div data-bt-bg="img/post_images/matrix.jpg">
+						<!-- Tile content -->
+						<a href="post.html">
+							<div class="bt-post-cover"></div>
+							<div class="bt-post-details">
+								<div class="col-xs-12">
+									<h2 class="bt-post-title">I thought it was a red aspirin!</h2>
+								</div>
+								<div class="col-xs-12">
+									<h3 class="bt-post-subtitle">Neo complaints that he was deceived to get the red pill!</h3>
+								</div>
+								<div class="col-xs-12">
+									<span class="bt-post-posted">
+										<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+										<span>Posted by Admin on April 10 2015</span>
+									</span>		
+								</div>
+							</div>
+						</a>
+					</div>
+					
+					<div class="bt-small-post" data-bt-bg="img/post_images/whitewalker.jpg">
+						<!-- Tile content -->
+						<a href="post.html">
+							<div class="bt-post-cover"></div>
+							<div class="bt-post-details">
+								<div class="col-xs-12">
+									<h2 class="bt-post-title">We hate winter!</h2>
+								</div>
+								<div class="col-xs-12">
+									<h3 class="bt-post-subtitle">White walkers love sunbathing and playing rackets..</h3>
+								</div>
+								<div class="col-xs-12">
+									<span class="bt-post-posted">
+										<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+										<span>Posted by Admin on April 9 2015</span>
+									</span>		
+								</div>
+							</div>
+						</a>
+					</div>
+					
+					<div class="bt-main-post" data-bt-bg="img/post_images/zoolander_400.jpg">
+						<!-- Tile content -->
+						<a href="post.html">
+							<div class="bt-post-cover"></div>
+							<div class="bt-post-details">
+								<div class="col-xs-12">
+									<h2 class="bt-post-title">How I achieved Magnum!</h2>
+								</div>
+								<div class="col-xs-12">
+									<h3 class="bt-post-subtitle">Zoolander confesses about his efforts and sacrifices he made until he reached the Magnum perfection..</h3>
+								</div>
+								<div class="col-xs-12">
+									<span class="bt-post-posted">
+										<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+										<span>Posted by Admin on April 2 2015</span>
+									</span>		
+								</div>
+							</div>
+						</a>
+					</div>
+					
+					<div class="bt-small-post" data-bt-bg="img/post_images/mugatu.jpg">
+						<!-- Tile content -->
+						<a href="post.html">
+							<div class="bt-post-cover"></div>
+							<div class="bt-post-details">
+								<div class="col-xs-12">
+									<h2 class="bt-post-title">Zoolander reaches top!</h2>
+								</div>
+								<div class="col-xs-12">
+									<h3 class="bt-post-subtitle">Mugatu talks about Zoolander..</h3>
+								</div>
+								<div class="col-xs-12">
+									<span class="bt-post-posted">
+										<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+										<span>Posted by Admin on April 2 2015</span>
+									</span>		
+								</div>
+							</div>
+						</a>
+					</div>
+					
+					<div class="bt-small-post" data-bt-bg="img/post_images/rossi.jpg">
+						<!-- Tile content -->
+						<a href="post.html">
+							<div class="bt-post-cover"></div>
+							<div class="bt-post-details">
+								<div class="col-xs-12">
+									<h2 class="bt-post-title">I hate blood!</h2>
+								</div>
+								<div class="col-xs-12">
+									<h3 class="bt-post-subtitle">Doctor admits he faints at the sight of blood..</h3>
+								</div>
+								<div class="col-xs-12">
+									<span class="bt-post-posted">
+										<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+										<span>Posted by Admin on March 26 2015</span>
+									</span>		
+								</div>
+							</div>
+						</a>
+					</div>
+					
+					<div data-bt-bg="img/post_images/ferrari.jpg">
+						<!-- Tile content -->
+						<a href="post.html">
+							<div class="bt-post-cover"></div>
+							<div class="bt-post-details">
+								<div class="col-xs-12">
+									<h2 class="bt-post-title">Ferrari seeking for F1 drivers!</h2>
+								</div>
+								<div class="col-xs-12">
+									<h3 class="bt-post-subtitle">The Ferrari racing team announces open job positions..</h3>
+								</div>
+								<div class="col-xs-12">
+									<span class="bt-post-posted">
+										<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+										<span>Posted by Admin on March 16 2015</span>
+									</span>		
+								</div>
+							</div>
+						</a>
+					</div>
+					
+					<div class="bt-small-post" data-bt-bg="img/post_images/Borat.jpg">
+						<!-- Tile content -->
+						<a href="post.html">
+							<div class="bt-post-cover"></div>
+							<div class="bt-post-details">
+								<div class="col-xs-12">
+									<h2 class="bt-post-title">Irresistible!</h2>
+								</div>
+								<div class="col-xs-12">
+									<h3 class="bt-post-subtitle">Borat reveals his secret weapon for women..</h3>
+								</div>
+								<div class="col-xs-12">
+									<span class="bt-post-posted">
+										<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+										<span>Posted by Admin on March 11 2015</span>
+									</span>		
+								</div>
+							</div>
+						</a>
+					</div>
+					
+					<div class="bt-small-post" data-bt-bg="img/post_images/lima.jpg">
+						<!-- Tile content -->
+						<a href="post.html">
+							<div class="bt-post-cover"></div>
+							<div class="bt-post-details">
+								<div class="col-xs-12">
+									<h2 class="bt-post-title">Borat is the man of my dreams!</h2>
+								</div>
+								<div class="col-xs-12">
+									<h3 class="bt-post-subtitle">Adriana Lima can't resist at Borat's charm..</h3>
+								</div>
+								<div class="col-xs-12">
+									<span class="bt-post-posted">
+										<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+										<span>Posted by Admin on March 11 2015</span>
+									</span>		
+								</div>
+							</div>
+						</a>
+					</div>
+					
+					<div data-bt-bg="img/post_images/leonidas.jpg">
+						<!-- Tile content -->
+						<a href="post.html">
+							<div class="bt-post-cover"></div>
+							<div class="bt-post-details">
+								<div class="col-xs-12">
+									<h2 class="bt-post-title">I've miscounted!</h2>
+								</div>
+								<div class="col-xs-12">
+									<h3 class="bt-post-subtitle">Leonidas confesses he thought he had more than 1000 soldiers..</h3>
+								</div>
+								<div class="col-xs-12">
+									<span class="bt-post-posted">
+										<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+										<span>Posted by Admin on March 2 2015</span>
+									</span>		
+								</div>
+							</div>
+						</a>
+					</div>
+					
+				 </div>
+				
+			</div>
+		</div>
+		
+		<!-- Third section of posts (load on scroll) -->
+		<div class="row">
+			<div class="col-xs-12 view-more-section hidden">	
+			
+				<div class="tl-page" data-tl-template="tempBlogMore">
+				
+					<div class="bt-small-post" data-bt-bg="img/post_images/macgyver.jpg">
+						<!-- Tile content -->
+						<a href="post.html">
+							<div class="bt-post-cover"></div>
+							<div class="bt-post-details">
+								<div class="col-xs-12">
+									<h2 class="bt-post-title">I've called the roadside assistance!</h2>
+								</div>
+								<div class="col-xs-12">
+									<h3 class="bt-post-subtitle">Macgyver admits he couldn't fix his car..</h3>
+								</div>
+								<div class="col-xs-12">
+									<span class="bt-post-posted">
+										<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+										<span>Posted by Admin on February 28 2015</span>
+									</span>		
+								</div>
+							</div>
+						</a>
+					</div>
+					
+					<div data-bt-bg="img/post_images/carousel.jpg">
+						<!-- Tile content -->
+						<a href="post.html">
+							<div class="bt-post-cover"></div>
+							<div class="bt-post-details">
+								<div class="col-xs-12">
+									<h2 class="bt-post-title">I'm still waiting!</h2>
+								</div>
+								<div class="col-xs-12">
+									<h3 class="bt-post-subtitle">Cirillo believes Maria Joaquina needs more time..</h3>
+								</div>
+								<div class="col-xs-12">
+									<span class="bt-post-posted">
+										<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+										<span>Posted by Admin on February 26 2015</span>
+									</span>		
+								</div>
+							</div>
+						</a>
+					</div>
+					
+					<div class="bt-small-post" data-bt-bg="img/post_images/spongebob.jpeg">
+						<!-- Tile content -->
+						<a href="post.html">
+							<div class="bt-post-cover"></div>
+							<div class="bt-post-details">
+								<div class="col-xs-12">
+									<h2 class="bt-post-title">We are just friends</h2>
+								</div>
+								<div class="col-xs-12">
+									<h3 class="bt-post-subtitle">Spongebob responds to rumors..</h3>
+								</div>
+								<div class="col-xs-12">
+									<span class="bt-post-posted">
+										<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+										<span>Posted by Admin on February 22 2015</span>
+									</span>		
+								</div>
+							</div>
+						</a>
+					</div>
+					
+					<div class="bt-main-post" data-bt-bg="img/post_images/nasa.jpg">
+						<!-- Tile content -->
+						<a href="post.html">
+							<div class="bt-post-cover"></div>
+							<div class="bt-post-details">
+								<div class="col-xs-12">
+									<h2 class="bt-post-title">Moon party!</h2>
+								</div>
+								<div class="col-xs-12">
+									<h3 class="bt-post-subtitle">NASA organizes the 70th Moon landing anniversary party on Moon surface!</h3>
+								</div>
+								<div class="col-xs-12">
+									<span class="bt-post-posted">
+										<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+										<span>Posted by Admin on February 20 2015</span>
+									</span>		
+								</div>
+							</div>
+						</a>
+					</div>
+					
+					<div class="bt-small-post" data-bt-bg="img/post_images/joey.jpg">
+						<!-- Tile content -->
+						<a href="post.html">
+							<div class="bt-post-cover"></div>
+							<div class="bt-post-details">
+								<div class="col-xs-12">
+									<h2 class="bt-post-title">How you doin?</h2>
+								</div>
+								<div class="col-xs-12">
+									<h3 class="bt-post-subtitle">The phrase no woman resists to..</h3>
+								</div>
+								<div class="col-xs-12">
+									<span class="bt-post-posted">
+										<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+										<span>Posted by Admin on February 18 2015</span>
+									</span>		
+								</div>
+							</div>
+						</a>
+					</div>
+					
+					<div class="bt-small-post" data-bt-bg="img/post_images/cl.jpg">
+						<!-- Tile content -->
+						<a href="post.html">
+							<div class="bt-post-cover"></div>
+							<div class="bt-post-details">
+								<div class="col-xs-12">
+									<h2 class="bt-post-title">Win the Champions League!</h2>
+								</div>
+								<div class="col-xs-12">
+									<h3 class="bt-post-subtitle">How to become a great coach..</h3>
+								</div>
+								<div class="col-xs-12">
+									<span class="bt-post-posted">
+										<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+										<span>Posted by Admin on February 15 2015</span>
+									</span>		
+								</div>
+							</div>
+						</a>
+					</div>
+					
+					<div data-bt-bg="img/post_images/waxon.jpg">
+						<!-- Tile content -->
+						<a href="post.html">
+							<div class="bt-post-cover"></div>
+							<div class="bt-post-details">
+								<div class="col-xs-12">
+									<h2 class="bt-post-title">Wax on - wax off</h2>
+								</div>
+								<div class="col-xs-12">
+									<h3 class="bt-post-subtitle">Mr Miyagi explains in detail his innovative technique..</h3>
+								</div>
+								<div class="col-xs-12">
+									<span class="bt-post-posted">
+										<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+										<span>Posted by Admin on February 14 2015</span>
+									</span>		
+								</div>
+							</div>
+						</a>
+					</div>
+					
+					<div class="bt-small-post" data-bt-bg="img/post_images/zak.jpg">
+						<!-- Tile content -->
+						<a href="post.html">
+							<div class="bt-post-cover"></div>
+							<div class="bt-post-details">
+								<div class="col-xs-12">
+									<h2 class="bt-post-title">I refused James Bond role!</h2>
+								</div>
+								<div class="col-xs-12">
+									<h3 class="bt-post-subtitle">Zak refused to play James Bond..</h3>
+								</div>
+								<div class="col-xs-12">
+									<span class="bt-post-posted">
+										<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+										<span>Posted by Admin on February 11 2015</span>
+									</span>		
+								</div>
+							</div>
+						</a>
+					</div>
+					
+					<div class="bt-small-post" data-bt-bg="img/post_images/Pacman.png">
+						<!-- Tile content -->
+						<a href="post.html">
+							<div class="bt-post-cover"></div>
+							<div class="bt-post-details">
+								<div class="col-xs-12">
+									<h2 class="bt-post-title">Best game ever!</h2>
+								</div>
+								<div class="col-xs-12">
+									<h3 class="bt-post-subtitle">PacMan was voted the best game of all times..</h3>
+								</div>
+								<div class="col-xs-12">
+									<span class="bt-post-posted">
+										<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+										<span>Posted by Admin on February 10 2015</span>
+									</span>		
+								</div>
+							</div>
+						</a>
+					</div>
+					
+					<div data-bt-bg="img/post_images/Porsche.jpg">
+						<!-- Tile content -->
+						<a href="post.html">
+							<div class="bt-post-cover"></div>
+							<div class="bt-post-details">
+								<div class="col-xs-12">
+									<h2 class="bt-post-title">Win a Porsche!</h2>
+								</div>
+								<div class="col-xs-12">
+									<h3 class="bt-post-subtitle">Great new competition with big prizes!</h3>
+								</div>
+								<div class="col-xs-12">
+									<span class="bt-post-posted">
+										<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+										<span>Posted by Admin on February 9 2015</span>
+									</span>		
+								</div>
+							</div>
+						</a>
+					</div>
+					
+				 </div>
+				
+			</div>
+		</div>
+		
+		<!-- Feel free to add as many sections as you like! -->
+			
+	</div>
+
+	<footer class="col-xs-12 marginTop-lg">
+		<div class="row text-center">
+			<a href="#" class="social-btn">
+				<i id="sc-btn-fb" class="fa fa-facebook"></i>
+			</a>
+			<a href="#" class="social-btn">
+				<i id="sc-btn-tr" class="fa fa-twitter"></i>
+			</a>
+			<a href="#" class="social-btn">
+				<i id="sc-btn-in" class="fa fa-linkedin"></i>
+			</a>
+		</div>
+		<div class="row text-center marginTop-md">
+			<span id="copyright">Copyright &copy BlogTiles 2015</span>
+		</div>
+	</footer>
+	
+	<script src="scripts/jquery-1.11.2.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="resources/jstiles/jstiles.js"></script>
+	<script src="scripts/jquery.easing.1.3.js"></script>
+	<script src="scripts/scripts.js"></script>
+  </body>
+</html>
