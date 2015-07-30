@@ -44,11 +44,11 @@ For more information about the structure of the tiles page, visit [jsTiles](http
 
 ##Ajax load##
 
-You also have the ability to load more articles when the user scrolls down to the last line of tiles. At this time, the template just shows up the alreaady loaded posts (doesn't perform any ajax call).
+You also have the ability to load more articles when the user scrolls down to the last line of tiles. At this time, the template just shows up the already loaded posts (doesn't perform any ajax call).
 
-You can find the `loadOnScroll()` function inside `scripts/scripts.js` file to see hoe the template loads the next post on scroll. Feel free to change this feature in order to perform an ajax call to load the next set of posts.
+You can find the `loadOnScroll()` function inside `scripts/scripts.js` file to see how the template loads the next post on scroll. Feel free to change this feature in order to perform an ajax call to load the next set of posts.
 
-A small example:
+Just change the part of code inside the first `if` statement, and perform an ajax call in order to load the next set of tiles:
 
     var loadOnScroll = function() {
 		var win = $(window);
@@ -60,11 +60,16 @@ A small example:
 		var contentBottom = cont.offset().top - parseFloat(win.scrollTop()) + contH;
 		if (contentBottom < lim) {
 			topPos('absolute');
-			cont
-				.find('.view-more-section.hidden')
-				.first()
-				.removeClass('hidden')
-				.jstiles(opt);
+
+			// Place here the ajax call
+            $.get('yourPage.php', function(data) {
+				if (data && data != '') {
+					//Build the tiles structure and initialize jsTiles()
+				} else {
+					alert('No more posts!');
+				}
+			});
+
 		} else {
 			topPos('fixed');
 		}	
