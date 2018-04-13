@@ -2,6 +2,8 @@
 
 A Bootstrap Template that uses tiles to display your blog posts.
 
+You can visit the demp page here: ( [http://kapantzak.github.io/BlogTiles/](http://kapantzak.github.io/BlogTiles/) )
+
 ##Dependencies##
 
 This template uses jsTiles ( [http://kapantzak.github.io/jstiles/](http://kapantzak.github.io/jstiles/ "jsTiles") ), another jQuery/Bootstrap plugin that creates the tiles. So, you have to include it in order to use this template.
